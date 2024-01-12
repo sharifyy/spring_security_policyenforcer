@@ -1,0 +1,28 @@
+{
+	"realm": "java_talks",
+	"auth-server-url": "http://localhost:8080",
+	"resource": "policy_client",
+	"credentials": {
+		"secret": "QaKQm6A2MdXshR7LJ5kG338bw6Xs7TCB"
+	},
+	"enforcement-mode": "ENFORCING",
+	"paths": [
+		{
+			"path": "/books",
+			"methods": [
+				{
+					"method": "POST",
+					"scopes": [
+						"book:books:create"
+					]
+				},
+				{
+					"method": "GET",
+					"scopes": [
+						"book:books:list"
+					]
+				}
+			]
+		}
+	]
+}
